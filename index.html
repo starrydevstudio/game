@@ -34,7 +34,6 @@
 
     input[type="checkbox"] {
         box-sizing: border-box;
-    padding: 0;
     width: 100%;
     display: block;
     appearance: none;
@@ -44,6 +43,8 @@
         background-repeat: no-repeat;
         background-position: center;
         background-color: white;
+        outline: 1px solid #ccc;
+        outline-offset: 2px;
     }
     input[type="checkbox"]:checked {
         background-image: url("./right.jpg");
@@ -51,6 +52,15 @@
         background-repeat: no-repeat;
         background-position: center;
         background-color: #eaeaea;
+    }
+
+    .close {
+        position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 50px;
+    padding: 5px 13px !important;
+    z-index: 10000;
     }
 
     @media (max-width: 565px) {
@@ -97,6 +107,9 @@
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         <!-- <div class="modal-header">
             
             <h5 class="modal-title">Which two words start with the same sound?</h5>
