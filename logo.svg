@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="290" height="77" viewBox="0 0 290 77">
+  <defs>
+    <rect id="rect-1" width="77" height="77" x="0" y="0"/>
+    <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="290" height="77" x="0" y="0" fill="black"/>
+      <use fill="white" xlink:href="#rect-1"/>
+    </mask>
+  </defs>
+  <g>
+    <text font-size="0" style="white-space:pre">
+      <tspan x="97" y="53" fill="rgb(0,0,0)" font-family="Poppins" font-size="32" font-weight="700" style="white-space:pre;text-transform:none">LINCON EDU</tspan>
+    </text>
+    <g>
+      <use fill="none" xlink:href="#rect-1"/>
+      <g mask="url(#mask-2)">
+        <path fill="rgb(255,157,0)" fill-rule="evenodd" d="M39.69978983 40.69978983V9H8v63.39957966h63.39957966V40.69978983H39.69978983z"/>
+        <path fill="rgb(11,49,94)" fill-rule="evenodd" d="M0 77.00000381h64.69424438V44.00554657H32.9944458V12.30575943H0v64.69424438zm63.39959717-1.29466629H1.29466247V13.60042h30.40513611v31.69978905h31.69979859v30.40512847z"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Proposal By StarryDevStudio</title>    
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+</head>
+<style>
+    .custom-head {
+        box-shadow: 1px 1px 4px #ccc;
+    padding-bottom: 10px;
+    }
+  
+    ul {
+        padding-left: 0px;
+        list-style: none;
+    }
+
+    ul li { 
+        padding: 6px 0px;
+    }
+
+    .modal-body .checkbox-col img {
+        height: 300px;
+        object-fit: contain;
+
+    }
+
+    .fas {
+        color: #ff9d00
+    }
+
+    input[type="checkbox"] {
+        box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+    display: block;
+    appearance: none;
+    height: 40px;
+    background-image: url("./question-mark.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: white;
+    }
+    input[type="checkbox"]:checked {
+        background-image: url("./right.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #eaeaea;
+    }
+
+    @media (max-width: 565px) {
+        .bg-style {
+            background-position: bottom;
+     
+        }
+    }
+   
+</style>
+<body>
+    <nav class="navbar navbar-light bg-light shadow custom-head">
+        <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./logo.svg" >
+        </a>
+    </div>
+    </nav>
+    <div class="bg-style" style="background-image: url('./Group.svg');  background-size: cover;
+    margin: 20px 0px;"> 
+    <div class="container">
+        <div class="row py-5 align-items-center">
+        <div class="col-12 col-md-6">
+            <div class="">
+            <h2> Consonant sounds and letters </h1>
+                
+<ul class="pt-3">
+<li  data-toggle="modal" data-target=".bd-example-modal-lg">1. Which two words start with the same sound?</li>
+<li>2. Find all the words that start with a given sound</li>
+<li>3. Which two words end with the same sound?</li>
+<li>4. Choose the letter that matches the consonant sound</li>
+<li>5. Which letter does the word start with?</li>
+<li>6. Which letter does the word end with?</li> 
+</ul>   
+</div>
+</div>
+        <div class="col-12 col-md-6">
+            <img src="./Rectangle.jpg" width="100%">
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+            
+            <h5 class="modal-title">Which two words start with the same sound?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div> -->
+          <div class="modal-body">
+            <div class="container">
+                
+                <div class="row align-items-center mb-5">
+                    <img id="playtitle" src="tenor.png" width="80px"/>
+                    <audio id="myAudio">
+                        <source src="which-two-words-start-with-same-sounds.mp3" type="audio/mpeg">
+                    </audio>
+                    <h4>
+                        Listen to each word. Which two words start with the same sound?
+                    </h4>
+                </div>
+                <div class="row mb-3">
+                    <div class="checkbox-col col-12 col-sm-4" onclick="playaudio('ten')">
+                        <audio id="ten">
+                            <source src="ten.mp3" type="audio/mpeg">
+                        </audio>
+                        <img src="ten.jpg" width="100%">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                    </div>
+                    <div class="checkbox-col col-12 col-sm-4" onclick="playaudio('tub')">
+                        <audio id="tub">
+                            <source src="tub.mp3" type="audio/mpeg">
+                        </audio>
+                        <img src="tub.png" width="100%">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                    </div>
+                    <div class="checkbox-col col-12 col-sm-4" onclick="playaudio('chair')">
+                        <audio id="chair">
+                            <source src="chair.mp3" type="audio/mpeg">
+                        </audio>
+                        <img src="chair.png" width="100%">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <button id="checkanswer" type="button" class="btn btn-primary">Check Answer</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="correct">
+    <source src="correct.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="wrong">
+    <source src="wrong.mp3" type="audio/mpeg">
+</audio>
+
+    <!-- <div style="background-color: black; color: white; font-size: 0.9rem; padding: 3px 0px">
+    <div class="container">
+        Web Design By StarryDevStudio
+    </div>
+</div> -->
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script>
+    document.querySelector("#playtitle").addEventListener("click", function() {
+        document.getElementById("myAudio").play()
+    })
+
+    function playaudio(name) {
+        document.getElementById(name).play()
+    }
+
+    document.querySelector("#checkanswer").addEventListener("click", function() {
+        const ans = document.querySelectorAll('.checkbox-col input');
+        if (ans[0].checked && ans[1].checked && !ans[2].checked) {
+            document.getElementById("correct").play()
+        } else {
+            document.getElementById("wrong").play()
+        }
+    })
+</script>
+</html>
